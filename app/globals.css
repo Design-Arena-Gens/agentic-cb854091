@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-fashion-primary hover:bg-fashion-secondary text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-fashion-dark font-semibold py-3 px-6 rounded-lg border-2 border-fashion-primary transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  }
+
+  .upload-zone {
+    @apply border-4 border-dashed border-fashion-primary/30 rounded-xl p-12 text-center hover:border-fashion-primary/60 transition-all duration-300 cursor-pointer bg-white/50 backdrop-blur-sm;
+  }
+}
